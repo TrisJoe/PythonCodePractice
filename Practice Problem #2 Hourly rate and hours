@@ -1,0 +1,11 @@
+hourlyrate=int(input("Enter hourly rate:"))
+hours=int(input("Enter hours:"))
+pay=0
+if(hours > 40):
+    pay=(hourlyrate*1.5)*hours
+    print (pay)
+    
+else:
+    pay=hourlyrate*hours
+    print (pay)
+    
