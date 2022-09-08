@@ -1,0 +1,23 @@
+class student:
+    def __init__(self):
+        self.sname = input("Enter name: ")
+        self.sage=input("Enter age: ")
+        self.sfavsubject=input("Enter favourite subject: ")
+        self.saddress=input("Enter address: ")
+        self.shobby=input("Enter hobby: ")
+    
+    def introduce(self):
+        print("The student name is {}, She is {}, Her favourite subject is {}, She lives in {}, and her favourite hobby is {}".format(self.sname, self.sage, self.sfavsubject, self.saddress, self.shobby))
+        
+while(True):
+    print("1. Enter Student Details")
+    print("2. Exit")
+    print("Enter the choice")
+    s=int(input())
+    if s==1:
+        stu1=student()
+        stu1.introduce()
+    elif s==2:
+        exit()
+    else:
+        print("Enter correct choice")
