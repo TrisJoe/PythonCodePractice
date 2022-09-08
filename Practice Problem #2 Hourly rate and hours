@@ -9,3 +9,17 @@ else:
     pay=hourlyrate*hours
     print (pay)
     
+#Try and Except
+pay=0
+try:
+        hourlyrate=int(input("Enter hourly rate:"))
+        hours=int(input("Enter hours:"))
+        if(hours > 40):
+            pay=(hourlyrate*1.5)*hours
+            print (pay)
+    
+        else:
+            pay=hourlyrate*hours
+            print (pay)
+except ValueError:
+        print("Error, please enter numeric input")
