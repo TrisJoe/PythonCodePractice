@@ -1,0 +1,7 @@
+distance=int(input("Enter the distance you travelled"))
+amount=1
+while (distance != 0):
+        amount = amount * (distance % 10)
+        distance = distance // 10
+
+print("Total amount you win ", amount)
