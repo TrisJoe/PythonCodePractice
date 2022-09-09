@@ -14,13 +14,11 @@ for i in string:
     else:
         x=x+i
 half=len(x)/2
-print(half)
 res=''
 for i in range(len(x)):
     if i >= half:
         res += x[i].upper()
     else:
         res += x[i]
-    
-print(x)
+
 print(res)
